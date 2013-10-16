@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+		<title>Executive Valet - Airport Parking</title>
+		
+		<!-- css stylesheet -->
+		<link type='text/css' rel='stylesheet' href='css/styles.css' />
+		
+		<!-- google web font - open sans -->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css'>
+		
+		<!-- responsive view port -->
+		<meta content='width=device-width, initial-scale=1.0' name='viewport'/>
+		
+		<!-- google hosted jquery -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
+		
+		<!-- jquery bundle -->
+		<script src="js/jquery-bundle/js/jquery-ui-1.10.3.custom.js" type="text/javascript"></script>
+		<link type="text/css" rel="stylesheet" href="css/jquery-custom.css" />
+		
+		<!-- jquery bundle - date picker -->
+		<script>
+		  $(function() {
+		    $( ".datepicker" ).datepicker();
+		  });
+		</script>
+		
+		<!-- jquery bundle - accordion -->
+		<script>
+			$(function() {
+			$( "#accordion" ).accordion();
+			});
+		</script>
+		
+		<!-- jquery bundle - dialogs -->
+		<script>
+		$(function() {
+		$( "#login-dialog" ).dialog({
+			  autoOpen: false,
+			  modal: true,
+			  show: {
+			    effect: "fade",
+			    duration: 200
+			  },
+			  hide: {
+			    effect: "fade",
+			    duration: 200
+			  }
+			});
+			
+			$( "#customer-login" ).click(function() {
+			  $( "#login-dialog" ).dialog( "open" );
+			});
+			});
+		</script>
+		
+		<!-- flexslider -->
+		<script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
+		<link type="text/css" rel="stylesheet" href="css/flexslider.css" />
+		
+		<!-- flexslider -->
+		<script>
+		$(window).load(function() {
+		  $('#homepage-slideshow').flexslider({
+		    animation: "slide"
+		  });
+		});
+		</script>
+		
+		<!-- flaunt nav -->
+		<script src="js/flaunt.min.js" type="text/javascript"></script>
+
+
+		
+	</head>
+	
+	<body>
+	
+		<header>
+		
+			<div id="secondary-nav">
+				<a id="logo" href="index.html"><img src="images/logo.png" /></a>
+				<span class="reserve-by-phone"><span class="hide-mid">Reserve by Phone:</span> <strong>(800) 218-1297</strong></span>
+				<a id="register" href="express-club.html">REGISTER</a>
+				<a id="customer-login"><span class="hide-mid">CUSTOMER</span> LOGIN </a>
+			</div>
+						
+			<div class="nav">
+				<ul class="nav-list">
+					<li class="nav-item active"><a href="make-a-reservation.html">Reservations</a>
+						<ul class="nav-submenu">
+							<li><a href="make-a-reservation.html">Make a Reservation</a></li>
+							<li><a href="index.html">Search for Rates</a></li>
+							<li><a href="edit-reservation.html">Edit or Cancel a Reservation</a></li>
+							</ul>
+					</li><!--
+				 --><li class="nav-item"><a href="prepaid-cards-and-vouchers.html">Prepaid Cards &amp; Vouchers</a>
+				 		<ul class="nav-submenu">
+							<li><a href="prepaid-cards.html">Prepaid Cards</a></li>
+							<li><a href="prepaid-vouchers.html">Prepaid Vouchers</a></li>
+						</ul>
+				 	</li><!--
+				 --><li class="nav-item"><a href="express-club.html">Express Club</a></li><!--
+				 --><li class="nav-item"><a href="car-care-services.html">Car Care</a></li><!--
+				 --><li class="nav-item"><a href="shopping-cart.html" id="cart"><img src="images/icon-cart.png" width="15" height="13"/> Cart</a></li>
+				</ul>
+			</div>
+
+			
+		</header>
+		
+		<section id="page-title">
+			<div class="wrapper">
+				<h1>Reservation Details</h1>
+			</div>
+		</section>
+		
+		<section id="page-content" class="left-sidebar-layout">
+			
+			<div id="breadcrumbs">
+				<a href="search-results-two-rates.html">1. Search for Parking &amp; Select Parking</a>
+				<img src="images/breadcrumb-arrow.png" width="10" height="18" />
+				<a href="reservation-details.html">2. Reservation Details</a>
+				<img src="images/breadcrumb-arrow.png" width="10" height="18" />
+				<a href="#" id="current-breadcrumb">3. Confirm Reservation</a>
+			</div>
+			
+			<div id="left">
+				<aside class="summary">
+					<h4>Reservation Order Summary</h4>
+					<div class="bar-content">
+						<h5>Reservation Date &amp; Time</h5>
+						<p>
+							<strong>Departure Date:</strong> 9/1/2013 <br>
+							<strong>Departure Time:</strong> 4:00 PM
+						</p>
+						<p>
+							<strong>Return Date:</strong> 9/1/2013<br>
+							<strong>Return Time:</strong> 4:00 PM
+						</p>
+						
+						<hr>
+						
+						<h5>Rate &amp; Pricing Details</h5>
+						<p class="pricing-details">
+							<span class="left">Standard Rate</span>
+							<span class="right strike-through">$20.00</span>
+						</p>
+						<p class="pricing-details">
+							<span class="left">Cost w/ Prepay *</span>
+							<span class="right">$16.00</span>
+						</p>
+						<p class="pricing-details">
+							<span class="left">Taxes and Fees</span>
+							<span class="right">$2.00</span>
+						</p>
+						
+						<hr>
+						
+						<p class="pricing-details grand-total">
+							<span class="left">Grand Total</span>
+							<span class="right">$18.00</span>
+						</p>
+						
+						<img class="barcode" src="images/sample-barcode.png" />
+						<small>
+							<strong>*</strong> NOTE: Price is only valid if reservation is prepaid online. If prepayment is not made, standard rate will apply at the lot.
+						</small>
+					</div>
+				</aside>
+			</div> <!-- end #left -->
+			
+			<div id="right">
+				<h2>Reservation Details</h2>
+				<div class="confirm-details left-col">
+					<h6>Name</h6>
+						<p>John Doe</p>
+					<h6>Email</h6>
+						<p>johndoe2000@gmail.com</p>
+					<h6>Phone Number</h6>
+						<p>203-555-5555</p>
+					<h6>Departure Date</h6>
+						<p>04/01/2013</p>
+					<h6>Return Date</h6>
+						<p>04/15/2013</p>
+				</div>		
+				<div class="confirm-details right-col">
+					<h6>Return Flight Number &amp; Airline</h6>
+						<p>0123456 United</p>
+					<h6>Vehicle Make &amp; Model</h6>
+						<p>Ford Fusion</p>
+					<h6>Vehicle Color</h6>
+						<p>Black</p>
+					<h6>Vehicle License Plate</h6>
+						<p>123-ABC</p>
+					<h6>Vehicle Registration State</h6>
+						<p>Connecticut</p>
+				</div>	
+				<div class="bottom-button-group">
+					<a href="reservation-confirmation.html" class="jumbo-button light-blue-button">Confirm Reservation</a>
+				</div> <!-- end .bottom-button-group -->
+			</div> <!-- end #right -->
+			
+		</section>
+		
+		<footer>
+			<div class="wrapper">
+				<div id="foot-one">
+					<strong>Executive Valet Parking</strong><br>
+					1186 South Street<br>
+					Suffield CT 06078<br>
+					(800) 218-1297
+				</div>
+				<div id="foot-two">
+					<a href="about-us.html">About Us</a>
+					<a href="contact-and-directions.html">Contact &amp; Directions</a>
+					<a href="specials.html">Specials</a>
+				</div>
+				<div id="foot-three">
+					<a href="post-trip-survey.html">Post-Trip Survey</a>
+					<a href="terms-of-use.html">Terms of Use</a>
+					<a href="employment.html">Employment</a>
+				</div>
+			</div><!-- end wrapper -->
+		</footer>
+		
+		<div id="login-dialog" title="Customer Login">
+			<form id="customer-login-form">
+				<input type="text" placeholder="USERNAME">
+				<input type="password" placeholder="PASSWORD">
+				<div id="login-links">
+					<input type="button" value="Login" class="small-button light-blue-button">
+					<a href="#">Forgot Password</a>
+				</div>
+			</form>
+		</div>
+				
+	</body>
+</html>

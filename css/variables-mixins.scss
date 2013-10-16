@@ -1,0 +1,163 @@
+/* VARIABLES */
+/* ------------------------------------------------------- */
+
+$dark-blue: #003471;
+$light-blue: #35b8de;
+$red: #c02328;
+$grey: #ccc;
+$light-grey: #eaeaea;
+$light-grey-darker: #dadada;
+
+
+
+/* STANDARD MIXINS */
+/* ------------------------------------------------------- */
+
+@mixin box-shadow($x, $y, $z, $color) {
+  box-shadow: $x $y $z $color;
+  -webkit-box-shadow: $x $y $z $color;
+  -moz-box-shadow: $x $y $z $color;
+  -ms-box-shadow: $x $y $z $color;
+}
+
+@mixin box-shadow-inset($x, $y, $z, $color) {
+  box-shadow: inset $x $y $z $color;
+  -webkit-box-shadow: inset $x $y $z $color;
+  -moz-box-shadow: inset $x $y $z $color;
+  -ms-box-shadow: inset $x $y $z $color;
+}
+
+@mixin text-shadow($x, $y, $color) {
+  text-shadow: 0 $x $y $color;
+  -webkit-text-shadow: 0 $x $y $color;
+  -moz-text-shadow: 0 $x $y $color;
+  -ms-text-shadow: 0 $x $y $color;
+}
+
+@mixin box-sizing {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
+
+@mixin border-radius($size) {
+	-webkit-border-radius: $size;
+	-moz-border-radius: $size;
+	border-radius: $size;
+}
+
+@mixin overflowfix {
+  &:after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+}
+
+@mixin wrapper {
+	width: 100%;
+	max-width: 1100px;
+	margin: 0 auto;
+	position: relative;
+}
+
+/* GRADIENT MIXINS */
+/* ------------------------------------------------------- */
+
+
+@mixin light-blue-gradient {
+	background: #3ccaef; /* Old browsers */
+	background: -moz-linear-gradient(top,  #3ccaef 0%, #1ac1ec 5%, #1ac1ec 45%, #19b7e0 60%, #19b7e0 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3ccaef), color-stop(5%,#1ac1ec), color-stop(45%,#1ac1ec), color-stop(60%,#19b7e0), color-stop(100%,#19b7e0)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #3ccaef 0%,#1ac1ec 5%,#1ac1ec 45%,#19b7e0 60%,#19b7e0 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #3ccaef 0%,#1ac1ec 5%,#1ac1ec 45%,#19b7e0 60%,#19b7e0 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #3ccaef 0%,#1ac1ec 5%,#1ac1ec 45%,#19b7e0 60%,#19b7e0 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #3ccaef 0%,#1ac1ec 5%,#1ac1ec 45%,#19b7e0 60%,#19b7e0 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3ccaef', endColorstr='#19b7e0',GradientType=0 ); /* IE6-9 */
+}
+
+@mixin light-blue-gradient-hover {
+	background: #51d1f1; /* Old browsers */
+	background: -moz-linear-gradient(top,  #51d1f1 0%, #30c8ee 5%, #30c8ee 45%, #2cc2e8 60%, #2cc2e8 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#51d1f1), color-stop(5%,#30c8ee), color-stop(45%,#30c8ee), color-stop(60%,#2cc2e8), color-stop(100%,#2cc2e8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #51d1f1 0%,#30c8ee 5%,#30c8ee 45%,#2cc2e8 60%,#2cc2e8 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #51d1f1 0%,#30c8ee 5%,#30c8ee 45%,#2cc2e8 60%,#2cc2e8 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #51d1f1 0%,#30c8ee 5%,#30c8ee 45%,#2cc2e8 60%,#2cc2e8 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #51d1f1 0%,#30c8ee 5%,#30c8ee 45%,#2cc2e8 60%,#2cc2e8 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#51d1f1', endColorstr='#2cc2e8',GradientType=0 ); /* IE6-9 */
+	}
+
+@mixin red-gradient {
+	background: #cd4f53; /* Old browsers */
+	background: -moz-linear-gradient(top,  #cd4f53 0%, #c02328 5%, #c02328 45%, #b62126 60%, #b62126 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cd4f53), color-stop(5%,#c02328), color-stop(45%,#c02328), color-stop(60%,#b62126), color-stop(100%,#b62126)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #cd4f53 0%,#c02328 5%,#c02328 45%,#b62126 60%,#b62126 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #cd4f53 0%,#c02328 5%,#c02328 45%,#b62126 60%,#b62126 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #cd4f53 0%,#c02328 5%,#c02328 45%,#b62126 60%,#b62126 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #cd4f53 0%,#c02328 5%,#c02328 45%,#b62126 60%,#b62126 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cd4f53', endColorstr='#b62126',GradientType=0 ); /* IE6-9 */	
+}
+
+@mixin red-gradient-hover {
+	background: #d26064; /* Old browsers */
+	background: -moz-linear-gradient(top,  #d26064 0%, #d8282e 5%, #d8282e 45%, #d0262b 60%, #d0262b 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d26064), color-stop(5%,#d8282e), color-stop(45%,#d8282e), color-stop(60%,#d0262b), color-stop(100%,#d0262b)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #d26064 0%,#d8282e 5%,#d8282e 45%,#d0262b 60%,#d0262b 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #d26064 0%,#d8282e 5%,#d8282e 45%,#d0262b 60%,#d0262b 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #d26064 0%,#d8282e 5%,#d8282e 45%,#d0262b 60%,#d0262b 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #d26064 0%,#d8282e 5%,#d8282e 45%,#d0262b 60%,#d0262b 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d26064', endColorstr='#d0262b',GradientType=0 ); /* IE6-9 */
+}
+
+/* BUTTON MIXINS */
+/* ------------------------------------------------------- */
+@mixin small-button {
+	display: inline-block;
+	border: 4px solid $light-grey-darker;
+	padding: 4px 16px;
+	font-size: 13px;
+	font-weight: 600;
+	font-family: "open sans", arial, helvetica, sans-serif;
+	line-height: 1;
+	color: #fff;
+	text-transform: uppercase;
+	cursor: pointer;
+	@include border-radius(25px);
+	-webkit-font-smoothing: antialiased;
+	text-align: center;
+}
+
+@mixin mid-button {
+	display: inline-block;
+	border: 4px solid $light-grey-darker;
+	padding: 4px 20px;
+	font-size: 14px;
+	font-weight: 600;
+	font-family: "open sans", arial, helvetica, sans-serif;
+	line-height: 1;
+	color: #fff;
+	text-transform: uppercase;
+	cursor: pointer;
+	@include border-radius(25px);
+	-webkit-font-smoothing: antialiased;
+	text-align: center;
+}
+
+@mixin jumbo-button {
+	display: inline-block;
+	border: 4px solid $light-grey-darker;
+	padding: 6px 24px;
+	font-size: 15px;
+	font-weight: 600;
+	font-family: "open sans", arial, helvetica, sans-serif;
+	line-height: 1;
+	color: #fff;
+	text-transform: uppercase;
+	cursor: pointer;
+	@include border-radius(25px);
+	-webkit-font-smoothing: antialiased;
+	text-align: center;
+}
+
+
