@@ -1279,6 +1279,54 @@ footer {
   float: left;
   clear: left; }
 
+/* POST TRIP SURVEY */
+/* ------------------------------------------------------- */
+#post-trip-survey label.half-width {
+  float: left;
+  clear: left;
+  padding: 0 20px 0 0; }
+#post-trip-survey .contact-checkbox input {
+  display: inline-block; }
+  #post-trip-survey .contact-checkbox input:last-child {
+    margin: 0 0 0 15px; }
+
+#star-rating {
+  width: 50%;
+  float: right;
+  padding: 0 0 0 20px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box; }
+  #star-rating table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin: 19px 0 0 0; }
+    #star-rating table tr {
+      border-bottom: 1px solid #dadada; }
+      #star-rating table tr:first-child {
+        border-top: 1px solid #dadada; }
+    #star-rating table td {
+      width: 46%;
+      padding: 8px 2%;
+      line-height: 1; }
+      #star-rating table td.label-cell {
+        text-align: right;
+        font-weight: 700;
+        color: #c02328;
+        text-transform: uppercase;
+        font-size: 12px; }
+      #star-rating table td.stars-cell a {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background: url("../images/star-blank.png") center no-repeat;
+        background-size: 16px 16px; }
+        #star-rating table td.stars-cell a.active, #star-rating table td.stars-cell a:hover {
+          background: url("../images/star-selected.png") center no-repeat;
+          background-size: 16px 16px; }
+
 /* HOME PAGE */
 /* ------------------------------------------------------- */
 section.homepage {
@@ -1803,6 +1851,16 @@ section.homepage {
   #grand-total {
     width: 50%;
     left: 50%; } }
+@media only screen and (max-width: 730px) {
+  /* post-trip-survey */
+  #post-trip-survey label.half-width {
+    width: 100%; }
+  #post-trip-survey #star-rating {
+    width: 100%;
+    padding: 0;
+    margin: 20px 0 40px 0; }
+    #post-trip-survey #star-rating table {
+      margin: 0; } }
 @media only screen and (max-width: 670px) {
   /* mixins and variables */
   /* page layouts */
