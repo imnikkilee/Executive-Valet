@@ -261,6 +261,10 @@ hr {
 #page-content.left-sidebar-layout {
 	#left {
 		width: 25%;
+		
+		aside.summary {
+			margin: 0 0 40px 0;
+		}
 	}
 	
 	#right {
@@ -922,7 +926,10 @@ footer {
 .edit-links {
 	float: right;
 	font-size: 12px;
-	
+	position: relative;
+	top: 1px;	
+	opacity: 0.8;
+
 	a {
 		color: #fff;
 		
@@ -1169,6 +1176,35 @@ footer {
 			}
 		}
 	}
+}
+
+
+/* EXPRESS CLUB ACCOUNT PAGES */
+/* ------------------------------------------------------- */
+
+.total-points {
+
+	span {
+		display: inline-block;
+		font-size: 20px;
+		font-weight: 700;
+		color: $red;
+		margin: 0 2px;
+		position: relative;
+		top: 2px;
+	}
+}
+
+.express-club-member-page {
+	.bar-content p:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.edit-account-info-links {
+	color: #cccccc;
+	text-transform: uppercase;
+	font-size: 12px;
 }
 
 

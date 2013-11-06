@@ -507,8 +507,6 @@ hr {
 
 #page-content.left-sidebar-layout #left {
   width: 25%; }
-  #page-content.left-sidebar-layout #left aside.summary {
-    margin: 0 0 40px 0; }
 #page-content.left-sidebar-layout #right {
   width: 75%;
   padding: 0 0 0 40px; }
@@ -1138,10 +1136,7 @@ footer {
 
 .edit-links {
   float: right;
-  font-size: 12px;
-  position: relative;
-  top: 1px;
-  opacity: 0.8; }
+  font-size: 12px; }
   .edit-links a {
     color: #fff; }
     .edit-links a:hover {
@@ -1331,25 +1326,6 @@ footer {
         #star-rating table td.stars-cell a.active, #star-rating table td.stars-cell a:hover {
           background: url("../images/star-selected.png") center no-repeat;
           background-size: 16px 16px; }
-
-/* EXPRESS CLUB ACCOUNT PAGES */
-/* ------------------------------------------------------- */
-.total-points span {
-  display: inline-block;
-  font-size: 20px;
-  font-weight: 700;
-  color: #c02328;
-  margin: 0 2px;
-  position: relative;
-  top: 2px; }
-
-.express-club-member-page .bar-content p:last-child {
-  margin-bottom: 0; }
-
-.edit-account-info-links {
-  color: #cccccc;
-  text-transform: uppercase;
-  font-size: 12px; }
 
 /* HOME PAGE */
 /* ------------------------------------------------------- */
