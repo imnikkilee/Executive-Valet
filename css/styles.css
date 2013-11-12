@@ -915,8 +915,10 @@ footer {
     clear: both;
     display: block; }
   .standard-form fieldset {
-    margin: 0 0 20px 0; }
-  .standard-form label {
+    margin: 0 0 20px 0;
+    width: 100%;
+    float: left; }
+  .standard-form label, .standard-form span.label {
     width: 50%;
     float: left;
     box-sizing: border-box;
@@ -925,16 +927,16 @@ footer {
     -ms-box-sizing: border-box;
     padding: 0 20px 0 0;
     margin: 0 0 20px 0; }
-    .standard-form label:nth-child(2n) {
+    .standard-form label:nth-child(2n), .standard-form span.label:nth-child(2n) {
       padding: 0 0 0 20px; }
-    .standard-form label span {
+    .standard-form label span, .standard-form span.label span {
       display: block;
       text-transform: uppercase;
       color: #c02328;
       font-weight: 700;
       font-size: 12px;
       margin: 0 0 3px -1px; }
-    .standard-form label input[type="text"], .standard-form label input[type="password"], .standard-form label select, .standard-form label textarea {
+    .standard-form label input[type="text"], .standard-form label input[type="password"], .standard-form label select, .standard-form label textarea, .standard-form span.label input[type="text"], .standard-form span.label input[type="password"], .standard-form span.label select, .standard-form span.label textarea {
       -webkit-appearance: none;
       width: 100%;
       box-sizing: border-box;
@@ -952,17 +954,18 @@ footer {
       -webkit-border-radius: 0;
       -moz-border-radius: 0;
       border-radius: 0; }
-      .standard-form label input[type="text"]:focus, .standard-form label input[type="password"]:focus, .standard-form label select:focus, .standard-form label textarea:focus {
+      .standard-form label input[type="text"]:focus, .standard-form label input[type="password"]:focus, .standard-form label select:focus, .standard-form label textarea:focus, .standard-form span.label input[type="text"]:focus, .standard-form span.label input[type="password"]:focus, .standard-form span.label select:focus, .standard-form span.label textarea:focus {
         outline: 2px solid #35b8de;
         border: 0; }
-    .standard-form label select {
+    .standard-form label select, .standard-form span.label select {
       background: url("../images/tiny-blue-arrow.png") center right 8px no-repeat #eaeaea;
       background-size: 8px 7px;
-      cursor: pointer; }
-    .standard-form label.selection-type {
+      cursor: pointer;
+      height: 23px; }
+    .standard-form label.selection-type, .standard-form span.label.selection-type {
       width: 45%;
       padding: 0 0 0 20px; }
-    .standard-form label.qty {
+    .standard-form label.qty, .standard-form span.label.qty {
       width: 15%;
       padding: 0 0 0 20px; }
   .standard-form p {
@@ -1462,7 +1465,7 @@ section.homepage {
   margin: 0 0 10px 0; }
   .homepage-search-form label.half-width:nth-child(2n) {
     margin: 0 0 0 4%; }
-.homepage-search-form label.full-width {
+.homepage-search-form label.full-width, .homepage-search-form span.label.full-width {
   width: 100%;
   float: left;
   box-sizing: border-box;
@@ -1471,18 +1474,18 @@ section.homepage {
   -ms-box-sizing: border-box;
   padding: 0 0 0 0;
   margin: 0 0 10px 0; }
-  .homepage-search-form label.full-width:after {
+  .homepage-search-form label.full-width:after, .homepage-search-form span.label.full-width:after {
     content: "";
     clear: both;
     display: block; }
-  .homepage-search-form label.full-width input {
+  .homepage-search-form label.full-width input, .homepage-search-form span.label.full-width input {
     width: 48%;
     float: left;
     margin: 0 4% 0 0; }
-  .homepage-search-form label.full-width select {
+  .homepage-search-form label.full-width select, .homepage-search-form span.label.full-width select {
     width: 48%;
     float: left; }
-.homepage-search-form label input.datepicker {
+.homepage-search-form label input.datepicker, .homepage-search-form span.label input.date-picker {
   background: #eaeaea url("../images/icon-calendar.png") center right 6px no-repeat;
   background-size: 13px 13px; }
 

@@ -659,9 +659,11 @@ footer {
 	
 	fieldset {
 		margin: 0 0 20px 0;
+		width: 100%;
+		float: left;
 	}
 	
-	label {
+	label, span.label {
 		width: 50%;
 		float: left;
 		@include box-sizing;
@@ -703,6 +705,7 @@ footer {
 			background: url("../images/tiny-blue-arrow.png") center right 8px no-repeat $light-grey;
 			background-size: 8px 7px;
 			cursor: pointer;
+			height: 23px;
 		}
 		
 		&.selection-type {
@@ -1325,7 +1328,7 @@ section.homepage {
 		}
 	}
 	
-	label.full-width {
+	label.full-width, span.label.full-width {
 		width: 100%;
 		float: left;
 		@include box-sizing;
@@ -1345,7 +1348,7 @@ section.homepage {
 		}
 	}
 	
-	label input.datepicker {
+	label input.datepicker, span.label input.date-picker {
 		background: #eaeaea url("../images/icon-calendar.png") center right 6px no-repeat;
 		background-size: 13px 13px;
 	}
