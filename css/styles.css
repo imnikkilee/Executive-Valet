@@ -961,7 +961,12 @@ footer {
       background: url("../images/tiny-blue-arrow.png") center right 8px no-repeat #eaeaea;
       background-size: 8px 7px;
       cursor: pointer;
-      height: 23px; }
+      -moz-appearance: none;
+      text-indent: 0.01px;
+      text-overflow: ''; }
+      .standard-form label select.ff-height-fix, .standard-form span.label select.ff-height-fix {
+        height: 23px;
+        padding: 3px 5px; }
     .standard-form label.selection-type, .standard-form span.label.selection-type {
       width: 45%;
       padding: 0 0 0 20px; }

@@ -705,7 +705,14 @@ footer {
 			background: url("../images/tiny-blue-arrow.png") center right 8px no-repeat $light-grey;
 			background-size: 8px 7px;
 			cursor: pointer;
-			height: 23px;
+			-moz-appearance: none;
+		    text-indent: 0.01px;
+		    text-overflow: '';
+		    
+		    &.ff-height-fix {
+			    height: 23px;
+			    padding: 3px 5px;
+		    }
 		}
 		
 		&.selection-type {
