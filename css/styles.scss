@@ -1451,16 +1451,14 @@ section.homepage {
 
 .homepage-partners {
 	padding: 40px 0 20px;
-	background: $light-grey;
+	background: #fff;
+	border-top: 1px solid $light-grey;
 	text-align: center;
 	
 	h3 {
 		color: $dark-blue;
 	}
 	
-	img {
-		margin: 0 20px 20px;
-	}
 }
 
 

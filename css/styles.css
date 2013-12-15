@@ -1576,12 +1576,11 @@ section.homepage {
 
 .homepage-partners {
   padding: 40px 0 20px;
-  background: #eaeaea;
+  background: #fff;
+  border-top: 1px solid #eaeaea;
   text-align: center; }
   .homepage-partners h3 {
     color: #003471; }
-  .homepage-partners img {
-    margin: 0 20px 20px; }
 
 /* ------------------------------------------------------- */
 /* ------------------------------------------------------- */
