@@ -829,7 +829,7 @@ footer {
     padding: 30px 30px 0;
     float: right;
     width: auto;
-    height: 167px;
+    height: 178px;
     text-align: left; }
     footer #travel-agents h3 {
       text-transform: uppercase;
@@ -858,6 +858,26 @@ footer {
         margin: 0 15px 0 0;
         padding: 0 15px 0 0;
         border-right: 1px solid #8d0005; }
+  footer #social-media {
+    text-align: left; }
+    footer #social-media a {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      padding: 5px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      margin: 10px 4px 0; }
+      footer #social-media a#facebook {
+        background: white url("../images/social-facebook.png") center no-repeat;
+        background-size: 60%; }
+      footer #social-media a#twitter {
+        background: white url("../images/social-twitter.png") center no-repeat;
+        background-size: 63%; }
+      footer #social-media a#linkedin {
+        background: white url("../images/social-linkedin.png") center no-repeat;
+        background-size: 60%; }
 
 /* SIDE BAR */
 /* ------------------------------------------------------- */
@@ -1359,6 +1379,10 @@ footer {
   text-transform: uppercase;
   font-size: 12px; }
 
+.small-button.red-button.delete-account {
+  float: right;
+  margin: 0 20px 0 0; }
+
 /* HOME PAGE */
 /* ------------------------------------------------------- */
 section.homepage {
@@ -1688,6 +1712,8 @@ section.homepage {
       float: none;
       text-align: left;
       display: inline-block; }
+    footer #foot-two a, footer #foot-three a {
+      margin: 20px 0; }
     footer #travel-agents {
       float: none;
       display: block;
@@ -2021,6 +2047,12 @@ section.homepage {
     text-align: center; }
     footer #foot-one a:last-child, footer #foot-two a:last-child, footer #foot-three a:last-child {
       margin: 0; }
+  footer #foot-two a, footer #foot-three a {
+    margin: 0 0 10px 0; }
+    footer #foot-two a:last-child, footer #foot-three a:last-child {
+      margin: 0; }
+  footer #social-media {
+    text-align: center; }
   footer #foot-one {
     margin-top: 20px; }
   footer #foot-two {
@@ -2068,7 +2100,12 @@ section.homepage {
   #car-care-services-table .car-care-row .col-points {
     width: 40%;
     padding: 0 20px 20px 20px;
-    text-align: left; } }
+    text-align: left; }
+
+  /* edit account */
+  .small-button.red-button.delete-account {
+    clear: left;
+    margin: 10px 0 0 0; } }
 /* ------------------------------------------------------- */
 @media only screen and (max-width: 470px) {
   /* header */
